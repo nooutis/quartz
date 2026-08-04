@@ -1,3 +1,144 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ==========================================
+// 1. Multilingual Explorer & Recent Notes Filter
+// ==========================================
+
+body[data-slug^="it"] {
+  .explorer [data-folderpath="en"],
+  .explorer button[data-folderpath="en"],
+  .explorer li:has(a[href*="/en/"]),
+  .explorer li:has(a[href$="/en"]),
+  .recent-notes li:has(a[href*="/en/"]),
+  .recent-notes li:has(a[href*="en/"]) {
+    display: none !important;
+  }
+}
+
+body[data-slug^="en"] {
+  .explorer [data-folderpath="it"],
+  .explorer button[data-folderpath="it"],
+  .explorer li:has(a[href*="/it/"]),
+  .explorer li:has(a[href$="/it"]),
+  .recent-notes li:has(a[href*="/it/"]),
+  .recent-notes li:has(a[href*="it/"]) {
+    display: none !important;
+  }
+}
+
+// ==========================================
+// 2. Page Title & Search Bar Styling
+// ==========================================
+
+.page-title {
+  font-size: clamp(1.75rem, 4vw, 10rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.search {
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+
+  // Header search bar trigger styling
+  button,
+  input,
+  .search-button,
+  #search-bar {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+
+    &::placeholder {
+      color: #ffffff !important;
+      opacity: 0.85 !important;
+    }
+
+    svg,
+    path,
+    p,
+    span,
+    kbd,
+    .search-icon,
+    .search-button-text,
+    .search-shortcut {
+      color: #ffffff !important;
+      fill: #ffffff !important;
+      stroke: #ffffff !important;
+      border-color: #ffffff !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff !important;
+      border-color: #ffffff !important;
+      box-shadow: none !important;
+
+      svg,
+      path,
+      p,
+      span,
+      kbd {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+    }
+  }
+}
+
+// ==========================================
+// 3. Custom Graph View Sizing (Bigger on Homepage)
+// ==========================================
+
+.graph > .graph-outer {
+  height: 500px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: height 0.3s ease;
+}
+
+// Homepage Graph View (Much bigger height & prominent layout)
+body[data-slug="index"],
+body[data-slug="it/index"],
+body[data-slug="en/index"],
+body[data-slug="it"],
+body[data-slug="en"],
+body[data-slug=""] {
+  .graph > .graph-outer {
+    height: 580px !important;
+    border-radius: 16px !important;
+    margin: 1.5rem 0 !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+body {
+  // Percorso del file inserito in quartz/static/
+  background-image: url("/static/sfondo.png") !important; 
+  background-size: cover !important;         // Copre l'intero schermo
+  background-position: center !important;     // Centra l'immagine
+  background-repeat: no-repeat !important;    // Impedisce la ripetizione
+  background-attachment: fixed !important;   // Lo sfondo rimane fermo durante lo scroll
+}
+
+// Opzionale: Rende il blocco centrale del testo semitrasparente
+// per garantire un'ottima leggibilità sopra l'immagine
+html body .page {
+  background-color: rgba(13, 17, 23, 0.30) !important; // Regola l'opacità (0.85)
+  backdrop-filter: blur(5px);                        // Effetto vetro satinato
+  border-radius: 16px;                               // Angoli arrotondati opzionali
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+html body .graph,
+html body .graph-outer {
+  background-color: rgba(13, 17, 23, 0.70) !important; // Colore solido del tema
+  // In alternativa puoi usare un valore RGBA opaco (es. 95% di opacità):
+  // background-color: rgba(13, 17, 23, 0.95) !important;
+  border-radius: 12px;
+  padding: 0.5rem;
+}

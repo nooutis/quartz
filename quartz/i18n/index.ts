@@ -85,6 +85,6 @@ export const TRANSLATIONS = {
 } as const
 
 export const defaultTranslation = "en-US"
-export const i18n = (locale: ValidLocale): Translation => TRANSLATIONS[locale ?? defaultTranslation]
-export type ValidLocale = keyof typeof TRANSLATIONS
+export const i18n = (locale: ValidLocale): Translation => TRANSLATIONS[locale] ?? TRANSLATIONS[defaultTranslation]
+export type ValidLocale = keyof typeof TRANSLATIONS | (string & {})
 export type ValidCallout = keyof CalloutTranslation

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Charlotte Writes
+  pageTitle: CharlotteWrites
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -22,30 +22,30 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#faf8f5"
+        lightgray: "#eee9df"
+        gray: "#cbd2d9"
+        darkgray: "#111827"
+        dark: "#0f172a"
+        secondary: "#7b2880"
+        tertiary: "#9c39a1"
+        highlight: rgba(167, 84, 169, 0.15)
+        textHighlight: "#f3c4f588"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#030611"
+        lightgray: "#0c1222"
+        gray: "#1c2840"
+        darkgray: "#e2c6e3"
+        dark: "#d48bd6"
+        secondary: "#A754A9"
+        tertiary: "#d48bd6"
+        highlight: rgba(167, 84, 169, 0.25)
+        textHighlight: "#a754a955"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:
-      defaultDateType: modified
+      defaultDateType: created
       priority:
         - frontmatter
         - git
@@ -72,8 +72,8 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 35
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -126,6 +126,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/content-index"
     enabled: true
+    layout:
+     position: left
+     priority: 70
     options:
       enableSiteMap: true
       enableRSS: true
@@ -147,20 +150,25 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 50
+      priority: 40
   - source: "@quartz-community/graph"
     enabled: true
+    options:
+      linkDistance: 45
+      repelForce: 0.7
+      fontSize: 0.7
     layout:
-      position: right
+      position: afterBody
       priority: 10
   - source: "@quartz-community/search"
     enabled: true
     layout:
-      position: left
-      priority: 20
+      position: header
+      priority: 10
       group: toolbar
       groupOptions:
         grow: true
+        align: center
   - source: "@quartz-community/backlinks"
     enabled: true
     layout:
@@ -184,20 +192,24 @@ plugins:
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
-      position: left
+      position: header
       priority: 10
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: left
-      priority: 30
+      position: head
+      priority: 20
       group: toolbar
+      groupOptions:
+        align: center
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
-      position: left
-      priority: 35
+      position: header
+      priority: 30
       group: toolbar
+      groupOptions:
+        align: center
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
@@ -209,15 +221,15 @@ plugins:
     options:
       provider: giscus
       options:
-        repo: TODO:username/repo-name
-        repoId: TODO:your-repo-id
-        category: Announcements
-        categoryId: TODO:your-category-id
+        repo: nooutis/quartz
+        repoId: R_kgDOTsdz1w
+        category: Comments
+        categoryId: DIC_kwDOTsdz184DClZ0
         mapping: url
         strict: true
         reactionsEnabled: true
         inputPosition: bottom
-        lightTheme: light
+        lightTheme: light-theme
         darkTheme: dark
         lang: en
     layout:
@@ -227,8 +239,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+       Instagram: https://www.instagram.com/ch4rlott3_reads?igsh=MWcwYmdyam03aWR6eA%3D%3D&utm_source=qr
+       Substack: https://substack.com/@charlotter3ads
+       YouTube: https://www.youtube.com/@oytismand 
     layout:
       position: footer
       priority: 50
@@ -236,7 +249,7 @@ plugins:
     enabled: true
     options:
       title: Recent Notes
-      limit: 5
+      limit: 3
       linkToMore: false
       showTags: true
     layout:
@@ -269,14 +282,16 @@ plugins:
     order: 5
     layout:
       position: beforeBody
-      priority: 15
+      priority: 30
       display: all
 layout:
+  left:
+    - Component: LanguageSwitch
   groups:
     toolbar:
-      priority: 35
+      priority: 20
       direction: row
-      gap: 0.5rem
+      gap: 1.25rem
   byPageType:
     "404":
       positions:

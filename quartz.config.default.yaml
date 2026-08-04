@@ -176,15 +176,13 @@ plugins:
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
-      position: left
-      priority: 30
-      group: toolbar
+      position: beforeBody
+      priority: 30 
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
-      position: left
+      position: beforeBody
       priority: 35
-      group: toolbar
   - source: "@quartz-community/breadcrumbs"
     enabled: true
     layout:
@@ -192,7 +190,7 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
       options: {}
@@ -203,8 +201,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+       Instagram: https://www.instagram.com/ch4rlott3_reads?igsh=MWcwYmdyam03aWR6eA%3D%3D&utm_source=qr
+       Substack: https://substack.com/@charlotter3ads
     layout:
       position: footer
       priority: 50
