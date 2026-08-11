@@ -127,8 +127,8 @@ plugins:
   - source: "@quartz-community/content-index"
     enabled: true
     layout:
-     position: left
-     priority: 70
+      position: left
+      priority: 70
     options:
       enableSiteMap: true
       enableRSS: true
@@ -239,9 +239,9 @@ plugins:
     enabled: true
     options:
       links:
-       Instagram: https://www.instagram.com/ch4rlott3_reads?igsh=MWcwYmdyam03aWR6eA%3D%3D&utm_source=qr
-       Substack: https://substack.com/@charlotter3ads
-       YouTube: https://www.youtube.com/@oytismand 
+        Instagram: https://www.instagram.com/ch4rlott3_reads?igsh=MWcwYmdyam03aWR6eA%3D%3D&utm_source=qr
+        Substack: https://substack.com/@charlotter3ads
+        YouTube: https://www.youtube.com/@oytismand
     layout:
       position: footer
       priority: 50
