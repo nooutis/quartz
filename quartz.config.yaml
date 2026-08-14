@@ -127,9 +127,8 @@ plugins:
   - source: "@quartz-community/content-index"
     enabled: true
     layout:
-      position: right
+      position: left
       priority: 70
-      display: desktop-only
     options:
       enableSiteMap: true
       enableRSS: true
@@ -152,14 +151,7 @@ plugins:
     layout:
       position: left
       priority: 40
-      display: desktop-only
-  - source: "@quartz-community/explorer"
-    enabled: true
-    layout:
-      position: header
-      priority: 40
-      display: mobile-only
-      group: toolbar
+    options: {}
   - source: "@quartz-community/graph"
     enabled: true
     options:
@@ -194,10 +186,11 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
+    options: {}
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
@@ -264,18 +257,6 @@ plugins:
     layout:
       position: left
       priority: 25
-      display: desktop-only
-  - source: "@quartz-community/recent-notes"
-    enabled: true
-    options:
-      title: Recent Notes
-      limit: 3
-      linkToMore: false
-      showTags: true
-    layout:
-      position: footer
-      priority: 25
-      display: mobile-only 
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
