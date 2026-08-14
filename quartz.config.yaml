@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: google
     tagId: G-EGM46TNG5B
-  locale: it-IT
+  locale: en-US  
   baseUrl: charlottewrites.eu
   ignorePatterns:
     - private
