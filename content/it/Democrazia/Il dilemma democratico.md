@@ -2,7 +2,7 @@
 publish: true
 title: Il dilemma democratico
 created: 2026-05-20T15:57:50.875Z
-modified: 2026-08-14T08:55:29.348Z
+modified: 2026-08-14T09:06:54.461Z
 tags:
   - democracy
   - math
@@ -42,6 +42,7 @@ In questo caso è possibile che il risultato delle elezioni dipenda interamente 
 | $A$      | $X$          | $Y$            | $Z$          |
 | $B$      | $Y$          | $Z$            | $X$          |
 | $C$      | $Z$          | $X$            | $Y$          |
+
 La maggioranza preferisce $X$ a $Y$ ($A$ e $C$ contro $B$), $Y$ a $Z$ ($A$ e $B$ contro $C$) e infine $Z$ a $X$ ($B$ e $C$ contro $A$). Mettendo insieme queste informazioni si ottiene l’assurda relazione per cui $X$ è meglio di $Y$, che è meglio di $Z$, che è meglio di $X$. Non esiste quindi un vincitore assoluto e il risultato finale dipende da una scelta arbitraria, come ad esempio l'ordine di spoglio dei voti.
 
 ### Il teorema di impossibilità di Arrow
