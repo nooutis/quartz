@@ -162,3 +162,10 @@ html body .graph-outer {
   }
 }
 
+/* Nasconde sia l'intestazione che il contenitore delle proprietà */
+.note-properties-header,
+details:has(> .note-properties-header),
+div[class*="note-properties"] {
+  display: none !important;
+}
+

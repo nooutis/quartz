@@ -45,7 +45,7 @@ plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
     options:
-      defaultDateType: created
+      defaultDateType: modified
       priority:
         - frontmatter
         - git
@@ -151,6 +151,15 @@ plugins:
     layout:
       position: left
       priority: 40
+      display: desktop-only
+    options: {}
+  - source: "@quartz-community/explorer"
+    enabled: true
+    layout:
+      position: header
+      group: toolbar
+      priority: 40
+      display: mobile-only
     options: {}
   - source: "@quartz-community/graph"
     enabled: true
@@ -257,6 +266,18 @@ plugins:
     layout:
       position: left
       priority: 25
+      display: desktop-only
+  - source: "@quartz-community/recent-notes"
+    enabled: true
+    options:
+      title: Recent Notes
+      limit: 3
+      linkToMore: false
+      showTags: true
+    layout:
+      position: footer
+      priority: 25
+      display: mobile-only 
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
