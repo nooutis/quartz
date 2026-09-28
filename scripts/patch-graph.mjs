@@ -6,6 +6,7 @@ function patchFile(filePath, replacements) {
   let content = fs.readFileSync(filePath, "utf8")
   let changed = false
   for (const { search, replace } of replacements) {
+    if (content.includes(replace)) continue
     if (typeof search === "string") {
       if (content.includes(search)) {
         content = content.replace(search, replace)
@@ -62,8 +63,8 @@ const explorerFiles = [
 for (const file of explorerFiles) {
   patchFile(file, [
     {
-      search: /let n=document\.getElementById\("template-folder"\),d=document\.getElementById\("template-file"\);if\(!n\|\|!d\)return;/,
-      replace: `let n=document.getElementById("template-folder"),d=document.getElementById("template-file");if(!n||!d)return;let _cur=(D||(typeof document!=="undefined"&&document.body?.dataset?.slug)||"");let _isIt=_cur.startsWith("it/")||_cur==="it"||_cur.startsWith("it");let _isEn=_cur.startsWith("en/")||_cur==="en"||_cur.startsWith("en");let _ns=u.slug||u.data?.slug||u.slugSegment||"";if(_isIt&&(_ns==="en"||_ns.startsWith("en/")))return;if(_isEn&&(_ns==="it"||_ns.startsWith("it/")))return;`,
+      search: /let n=document\.getElementById\("template-folder"\),d=document\.getElementById\("template-file"\);if\(!n\|\|!d\)return;(?:let _cur=[^;]+;let _isIt=[^;]+;let _isEn=[^;]+;let _ns=[^;]+;if\(_isIt&&[^)]+\)return;if\(_isEn&&[^)]+\)return;)*let E=t\?t\+"\/"\+u\.slugSegment:u\.slugSegment/,
+      replace: `let n=document.getElementById("template-folder"),d=document.getElementById("template-file");if(!n||!d)return;let _cur=(D||(typeof document!=="undefined"&&document.body?.dataset?.slug)||"");let _isIt=_cur==="it"||_cur.startsWith("it/");let _isEn=_cur==="en"||_cur.startsWith("en/");let _ns=u.slug||u.data?.slug||u.slugSegment||"";if(_isIt&&(_ns==="en"||_ns.startsWith("en/")||u.slugSegment==="en"))return;if(_isEn&&(_ns==="it"||_ns.startsWith("it/")||u.slugSegment==="it"))return;let E=t?t+"/"+u.slugSegment:u.slugSegment`,
     },
   ])
 }
