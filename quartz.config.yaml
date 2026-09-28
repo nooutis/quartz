@@ -22,15 +22,15 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f5"
-        lightgray: "#eee9df"
-        gray: "#cbd2d9"
-        darkgray: "#111827"
-        dark: "#0f172a"
-        secondary: "#7b2880"
-        tertiary: "#9c39a1"
-        highlight: rgba(167, 84, 169, 0.15)
-        textHighlight: "#f3c4f588"
+        light: "#030611"
+        lightgray: "#0c1222"
+        gray: "#1c2840"
+        darkgray: "#e2c6e3"
+        dark: "#d48bd6"
+        secondary: "#A754A9"
+        tertiary: "#d48bd6"
+        highlight: rgba(167, 84, 169, 0.25)
+        textHighlight: "#a754a955"
       darkMode:
         light: "#030611"
         lightgray: "#0c1222"
@@ -55,7 +55,7 @@ plugins:
     enabled: true
     options:
       theme:
-        light: github-light
+        light: github-dark
         dark: github-dark
       keepBackground: false
     order: 20
@@ -206,7 +206,7 @@ plugins:
       position: header
       priority: 10
   - source: "@quartz-community/darkmode"
-    enabled: true
+    enabled: false
     layout:
       position: head
       priority: 20
@@ -240,7 +240,7 @@ plugins:
         strict: true
         reactionsEnabled: true
         inputPosition: bottom
-        lightTheme: light-theme
+        lightTheme: dark
         darkTheme: dark
         lang: en
     layout:

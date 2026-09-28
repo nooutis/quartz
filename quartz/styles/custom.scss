@@ -1,5 +1,11 @@
 @use "./variables.scss" as *;
 
+:root,
+:root[saved-theme="light"],
+:root[saved-theme="dark"] {
+  color-scheme: dark !important;
+}
+
 // ==========================================
 // 1. Multilingual Explorer & Recent Notes Filter
 // ==========================================
