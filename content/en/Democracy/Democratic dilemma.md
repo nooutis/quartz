@@ -2,7 +2,7 @@
 publish: true
 title: Democratic dilemma
 created: 2026-08-11T15:58:12.280Z
-modified: 2026-09-28T13:12:58.268Z
+modified: 2026-09-28T13:19:56.001Z
 tags:
   - democracy
   - economy
@@ -15,7 +15,7 @@ tags:
 
 # On Necessity and Impossibility
 
-> “\[In this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of Government except all those other forms that have been tried from time to time]" (https://api.parliament.uk/historic-hansard/commons/1947/nov/11/parliament-bill)
+> [In this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of Government except all those other forms that have been tried from time to time](https://api.parliament.uk/historic-hansard/commons/1947/nov/11/parliament-bill)
 >
 > Winston Churchill, House of Commons, November 11, 1947, 207
 
@@ -43,11 +43,11 @@ In simple terms, a total ordering consists, for each voter, of a list of candida
 
 In this case, it is possible for the outcome of the elections to depend entirely on the order in which the votes are presented. Let us consider an example with three voters and three candidates:
 
-| Voter | First Choice | Second Choice | Third Choice |    
+| Voter | First Choice | Second Choice | Third Choice |
 | ----- | ------------ | ------------- | ------------ |
-| A     | X            | Y             | Z            |     
-| B     | Y            | Z             | X            |     
-| C     | Z            | X             | Y            | 
+| A     | X            | Y             | Z            |\
+| B     | Y            | Z             | X            |\
+| C     | Z            | X             | Y            |
 
 The majority prefers X to Y (A and C against B), Y to Z (A and B against C), and finally, Z to X (B and C against A). Combining this information, we obtain the absurd relationship that X is better than Y, which is better than Z, which is better than X. Therefore, there is no absolute winner, and the final result depends on an arbitrary choice of individual candidates.
 
