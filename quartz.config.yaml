@@ -23,8 +23,8 @@ configuration:
     colors:
       lightMode:
         light: "#030611"
-        lightgray: "#0c1222"
-        gray: "#1c2840"
+        lightgray: "#ffffff"
+        gray: "#ffffff"
         darkgray: "#e2c6e3"
         dark: "#d48bd6"
         secondary: "#A754A9"
@@ -33,8 +33,8 @@ configuration:
         textHighlight: "#a754a955"
       darkMode:
         light: "#030611"
-        lightgray: "#0c1222"
-        gray: "#1c2840"
+        lightgray: "#ffffff"
+        gray: "#ffffff"
         darkgray: "#e2c6e3"
         dark: "#d48bd6"
         secondary: "#A754A9"
