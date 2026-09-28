@@ -43,11 +43,11 @@ In simple terms, a total ordering consists, for each voter, of a list of candida
 
 In this case, it is possible for the outcome of the elections to depend entirely on the order in which the votes are presented. Let us consider an example with three voters and three candidates:
 
-| Voter | First Choice | Second Choice | Third Choice |     |
+| Voter | First Choice | Second Choice | Third Choice |    
 | ----- | ------------ | ------------- | ------------ |
-| A     | X            | Y             | Z            |     |
-| B     | Y            | Z             | X            |     |
-| C     | Z            | X             | Y            |     |
+| A     | X            | Y             | Z            |     
+| B     | Y            | Z             | X            |     
+| C     | Z            | X             | Y            | 
 
 The majority prefers X to Y (A and C against B), Y to Z (A and B against C), and finally, Z to X (B and C against A). Combining this information, we obtain the absurd relationship that X is better than Y, which is better than Z, which is better than X. Therefore, there is no absolute winner, and the final result depends on an arbitrary choice of individual candidates.
 
