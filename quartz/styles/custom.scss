@@ -11,27 +11,39 @@ hr {
 }
 
 // ==========================================
-// 1. Multilingual Explorer & Recent Notes Filter
+// 1. Multilingual Isolation (Italian vs English)
 // ==========================================
 
 body[data-slug^="it"] {
+  .explorer li:has([data-folderpath="en"]),
+  .explorer li:has([data-folderpath^="en"]),
   .explorer [data-folderpath="en"],
   .explorer button[data-folderpath="en"],
   .explorer li:has(a[href*="/en/"]),
+  .explorer li:has(a[href*="en/"]),
   .explorer li:has(a[href$="/en"]),
   .recent-notes li:has(a[href*="/en/"]),
-  .recent-notes li:has(a[href*="en/"]) {
+  .recent-notes li:has(a[href*="en/"]),
+  .backlinks li:has(a[href*="/en/"]),
+  .backlinks li:has(a[href*="en/"]),
+  .search .result-card[id^="en"] {
     display: none !important;
   }
 }
 
 body[data-slug^="en"] {
+  .explorer li:has([data-folderpath="it"]),
+  .explorer li:has([data-folderpath^="it"]),
   .explorer [data-folderpath="it"],
   .explorer button[data-folderpath="it"],
   .explorer li:has(a[href*="/it/"]),
+  .explorer li:has(a[href*="it/"]),
   .explorer li:has(a[href$="/it"]),
   .recent-notes li:has(a[href*="/it/"]),
-  .recent-notes li:has(a[href*="it/"]) {
+  .recent-notes li:has(a[href*="it/"]),
+  .backlinks li:has(a[href*="/it/"]),
+  .backlinks li:has(a[href*="it/"]),
+  .search .result-card[id^="it"] {
     display: none !important;
   }
 }
