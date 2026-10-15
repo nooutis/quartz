@@ -2,7 +2,7 @@
 publish: true
 title: Le radici delle disuguaglianze
 created: 2026-06-07T15:58:49.904Z
-modified: 2026-10-15T12:27:12.400Z
+modified: 2026-10-15T17:49:22.969Z
 tags:
   - philosophy
   - politics
@@ -27,6 +27,7 @@ Per la maggior parte della storia, gli esseri umani hanno vissuto in un contesto
 | Controllo della politica economica | Monopolio sul flusso delle risorse materiali e sul commercio                 | Esclusione della competizione da parte delle elite                                                            |
 | Motivi ideologici e rituali        | Costruzione di edifici sacri, organizzazione rituale                         | Oscillazione tra azione collettiva e delle emergenti classi sociali                                           |
 | Selezione culturale multilivello   | Pressione competitiva alla cooperazione su larga scala                       | Diffusione di innovazioni militari attraverso un processo di centralizzazione del potere economico e politico |
+
 Mentre la nascita delle gerarchie risponde a molteplici matrici, l'affermazione su larga scala del modello statale e la quasi scomparsa delle formazioni orizzontali sono state determinate soprattutto da impulsi bellici: la pressione competitiva militare e le guerra di conquista hanno reso la centralizzazione coercitiva l'unica configurazione possibile per sopravvivere.
 Le gerarchie non sono quindi naturali, ma sono il complesso risultato di una serie di aspetti sociali, economici e culturali. La loro presenza è precedente al capitalismo contemporaneo, ma costituisce un elemento funzionale alla riproduzione e alla persistenza dello stesso.
 
