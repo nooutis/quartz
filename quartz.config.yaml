@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: google
     tagId: G-EGM46TNG5B
-  locale: en-US  
+  locale: en-US
   baseUrl: charlottewrites.eu
   ignorePatterns:
     - private
@@ -164,9 +164,18 @@ plugins:
   - source: "@quartz-community/graph"
     enabled: true
     options:
-      linkDistance: 45
-      repelForce: 0.7
-      fontSize: 0.7
+      localGraph:
+        depth: -1
+        linkDistance: 45
+        repelForce: 0.7
+        fontSize: 0.7
+        focusOnHover: true
+      globalGraph:
+        depth: -1
+        linkDistance: 45
+        repelForce: 0.7
+        fontSize: 0.7
+        focusOnHover: true
     layout:
       position: afterBody
       priority: 10
@@ -277,7 +286,7 @@ plugins:
     layout:
       position: footer
       priority: 25
-      display: mobile-only 
+      display: mobile-only
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
