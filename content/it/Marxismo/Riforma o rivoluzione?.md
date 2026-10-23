@@ -2,13 +2,15 @@
 publish: true
 title: Riforma o rivoluzione?
 created: 2026-10-16T05:15:00.000Z
-modified: 2026-10-20T05:52:45.589Z
+modified: 2026-10-23T06:18:32.659Z
 tags:
   - philosophy
   - politics
   - economy
   - marxism
 ---
+
+[[Reform or Revolution?|English]]
 
 L'obiettivo principale delle politiche di sinistra e di estrema sinistra è quello di ridurre, o abbattere completamente, le disuguaglianze. [[Le radici delle disuguaglianze|Mentre è possibile alleviare radicalmente le differenze di genere ed etniche]], è impossibile eliminare le differenze economiche rimanendo all'interno del capitalismo; è quindi necessario capire in che modo si possa modificare radicalmente il sistema produttivo. Storicamente sono state proposte due strade: la riforma e la rivoluzione. Esse differiscono per il rapporto che hanno con la legalità e la continuità dell'ordinamento giuridico: mentre la riforma è un processo che si svolge all'interno delle istituzioni, la rivoluzione, anche non violenta, è extra-istituzionale. In un'ottica pragmatica, nessuna delle due strade è sempre preferibile all'altra: la scelta dipende dalle circostanze storiche, dalla situazione politica e dai risultati previsti. Ad esempio, la rivoluzione si impone come unica via quando si parla di apparati statali strutturalmente irriformabili: regimi autocratici o autoritari in cui la totale assenza di canali democratici e la repressione preventiva impediscono qualsiasi forma di gradualismo, lasciando al proletariato "nulla da perdere all'infuori delle proprie catene"[^2].
 
