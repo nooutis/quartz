@@ -35,26 +35,32 @@ for (const file of graphFiles) {
     // 1.1 Text creation: initial alpha=0, dark stroke for precedence over links
     {
       search:
-        /lu=new o\.Text\(\{text:Du\.text,style:\{fontSize:We\*15,fill:ze,fontFamily:Ne[^}]*\},resolution:window\.devicePixelRatio\*4\}\);lu\.anchor\.set\(\.5,1\.2\),lu\.alpha=[01],(?:lu\.eventMode="none",)?lu\.scale\.set\(1\/qu\),vu\.addChild\(lu\);/,
-      replace: `lu=new o.Text({text:Du.text,style:{fontSize:We*15,fill:ze,fontFamily:Ne,stroke:{color:"#030611",width:4,join:"round"}},resolution:window.devicePixelRatio*4});lu.anchor.set(.5,1.2),lu.alpha=0,lu.eventMode="none",lu.scale.set(1/qu),vu.addChild(lu);`,
+        /(?:Du|lu)=new (?:a|o)\.Text\(\{text:(?:iu|Du)\.text,style:\{fontSize:We\*15,fill:ze,fontFamily:Ne[^}]*\},resolution:window\.devicePixelRatio\*4\}\);(?:Du|lu)\.anchor\.set\(\.5,1\.2\),(?:Du|lu)\.alpha=[01],(?:(?:Du|lu)\.eventMode="none",)?(?:Du|lu)\.scale\.set\(1\/(?:Vu|qu)\),vu\.addChild\((?:Du|lu)\);/,
+      replace: `Du=new a.Text({text:iu.text,style:{fontSize:We*15,fill:ze,fontFamily:Ne,stroke:{color:"#030611",width:4,join:"round"}},resolution:window.devicePixelRatio*4});Du.anchor.set(.5,1.2),Du.alpha=0,Du.eventMode="none",Du.scale.set(1/Vu),vu.addChild(Du);`,
     },
     // 1.2 Hover handler: hover shows label at alpha=1
     {
       search:
-        /function qe\(\)\{for\(var i=1\/qu,l=i\*1\.1,F=0;F<L\.length;F\+\+\)\{var A=L\[F\];_u===A\.simulationData\.id\?\(A\.label\.alpha=1,A\.label\.scale\.set\(l\)\):(?:\(A\.label\.alpha=1,A\.label\.scale\.set\(i\)\)|A\.label\.scale\.set\(i\))\s*\}\}/,
-      replace: `function qe(){for(var i=1/qu,l=i*1.1,F=0;F<L.length;F++){var A=L[F];_u===A.simulationData.id?(A.label.alpha=1,A.label.scale.set(l)):A.label.scale.set(i)}}`,
+        /function qe\(\)\{for\(var i=1\/(?:Vu|qu),l=i\*1\.1,F=0;F<(?:P|L)\.length;F\+\+\)\{var (?:v|A)=(?:P|L)\[F\];_u===(?:v|A)\.simulationData\.id\?\((?:v|A)\.label\.alpha=1,(?:v|A)\.label\.scale\.set\(l\)\):(?:\((?:v|A)\.label\.alpha=1,(?:v|A)\.label\.scale\.set\(i\)\)|(?:v|A)\.label\.scale\.set\(i\))\s*\}\}/,
+      replace: `function qe(){for(var i=1/Vu,l=i*1.1,F=0;F<P.length;F++){var v=P[F];_u===v.simulationData.id?(v.label.alpha=1,v.label.scale.set(l)):v.label.scale.set(i)}}`,
     },
     // 1.3 Zoom handler: visible only when zoomed in (l > 1)
     {
       search:
-        /var ut=function\(i\)\{P=i\.transform,ou\.scale\.set\(P\.k,P\.k\),ou\.position\.set\(P\.x,P\.y\);(?:for\(var v=0;v<vu\.children\.length;v\+\+\)\{vu\.children\[v\]\.alpha=1\}|for\(var l=P\.k\*Me,F=[^,]+,A=\[\],v=0;v<L\.length;v\+\+\)L\[v\]\.active&&A\.push\(L\[v\]\.label\);for\(var v=0;v<vu\.children\.length;v\+\+\)\{var j=vu\.children\[v\];A\.indexOf\(j\)===-1&&\(j\.alpha=F\)\})\},et=a\.zoom/,
-      replace: `var ut=function(i){P=i.transform,ou.scale.set(P.k,P.k),ou.position.set(P.x,P.y);for(var l=P.k*Me,F=Math.max(0,Math.min(1,(l-1)/.6)),A=[],v=0;v<L.length;v++)L[v].active&&A.push(L[v].label);for(var v=0;v<vu.children.length;v++){var j=vu.children[v];A.indexOf(j)===-1&&(j.alpha=F)}},et=a.zoom`,
+        /var ut=function\(i\)\{(?:j|P)=i\.transform,(?:nu|ou)\.scale\.set\((?:j|P)\.k,(?:j|P)\.k\),(?:nu|ou)\.position\.set\((?:j|P)\.x,(?:j|P)\.y\);(?:for\(var v=0;v<vu\.children\.length;v\+\+\)\{vu\.children\[v\]\.alpha=1\}|for\(var l=(?:j|P)\.k\*Me,F=[^;]+,(?:v|A)=\[\],(?:C|v)=0;(?:C|v)<(?:P|L)\.length;(?:C|v)\+\+\)(?:P|L)\[(?:C|v)\]\.active&&(?:\bv|A)\.push\((?:P|L)\[(?:C|v)\]\.label\);for\(var (?:C|v)=0;(?:C|v)<vu\.children\.length;(?:C|v)\+\+\)\{var (?:T|j)=vu\.children\[(?:C|v)\];(?:\bv|A)\.indexOf\((?:T|j)\)===-1&&\((?:T|j)\.alpha=F\)\})\},et=(?:o|a)\.zoom/,
+      replace: `var ut=function(i){j=i.transform,nu.scale.set(j.k,j.k),nu.position.set(j.x,j.y);for(var l=j.k*Me,F=Math.max(0,Math.min(1,(l-1)/.6)),v=[],C=0;C<P.length;C++)P[C].active&&v.push(P[C].label);for(var C=0;C<vu.children.length;C++){var T=vu.children[C];v.indexOf(T)===-1&&(T.alpha=F)}},et=o.zoom`,
     },
-    // 1.4 Language filter: isolate nodes and links by language
+    // 1.4 Language filter: isolate nodes by language
     {
       search:
-        /var Ku=await fetchData;eu=new Map;(?:[\s\S]*?)for\(var Ju in Ku\)\{?[\s\S]*?eu\.set\((?:_k|Fu\(Ju\)),Ku\[Ju\]\)\}?/,
-      replace: `var Ku=await fetchData;eu=new Map;var _cur=m||(typeof document!=="undefined"&&document.body?.dataset?.slug)||"";var _isIt=_cur.startsWith("it/")||_cur==="it";var _isEn=_cur.startsWith("en/")||_cur==="en";for(var Ju in Ku){var _k=Fu(Ju);if(_k==="/"||_k.endsWith("/")||_k==="it"||_k==="en")continue;if(_k.startsWith("tags/"))continue;if(_isIt&&(_k.startsWith("en/")||_k==="en"))continue;if(_isEn&&(_k.startsWith("it/")||_k==="it"))continue;eu.set(_k,Ku[Ju])}`,
+        /try\{var (?:qu|Ku)=await fetchData;(?:uu|eu)=new Map;(?:[\s\S]*?)for\(var (?:Ku|Ju) in (?:qu|Ku)\)\{?(?:uu|eu)\.set\((?:_k|cu|Fu)\((?:Ku|Ju)\),(?:qu|Ku)\[(?:Ku|Ju)\]\)\}?\}catch\(i\)\{return console\.error\("\[Graph\] Error loading data:",i\),function\(\)\{\}\}/,
+      replace: `try{var qu=await fetchData;uu=new Map;var _cur=g||(typeof document!=="undefined"&&document.body?.dataset?.slug)||"";var _isIt=_cur.startsWith("it/")||_cur==="it";var _isEn=_cur.startsWith("en/")||_cur==="en";for(var Ku in qu){var _k=cu(Ku);if(_k==="/"||_k.endsWith("/")||_k==="it"||_k==="en")continue;if(_k.startsWith("tags/"))continue;if(_isIt&&(_k.startsWith("en/")||_k==="en"))continue;if(_isEn&&(_k.startsWith("it/")||_k==="it"))continue;uu.set(_k,qu[Ku])}}catch(i){return console.error("[Graph] Error loading data:",i),function(){}}`,
+    },
+    // 1.5 Link filter: prevent direct cross-language edges between Italian and English notes
+    {
+      search:
+        /(?:Ju|Xu)=new Set\((?:uu|eu)\.keys\(\)\);(?:uu|eu)\.forEach\(function\(i,l\)\{(?:var _isItL[^;]+;var _isEnL[^;]+;)?for\(var F=i\.links\|\|\[\],(?:v|A)=0;(?:v|A)<F\.length;(?:v|A)\+\+\)\{var (?:C|v)=(?:cu|Fu)\(F\[(?:v|A)\]\);(?:var _isItC[^;]+;var _isEnC[^;]+;if\([^)]+\)continue;)?(?:Ju|Xu)\.has\((?:C|v)\)&&(?:eu|tu)\.push\(\{source:l,target:(?:C|v)\}\)\}/,
+      replace: `Ju=new Set(uu.keys());uu.forEach(function(i,l){var _isItL=l.startsWith("it/")||l==="it";var _isEnL=l.startsWith("en/")||l==="en";for(var F=i.links||[],v=0;v<F.length;v++){var C=cu(F[v]);var _isItC=C.startsWith("it/")||C==="it";var _isEnC=C.startsWith("en/")||C==="en";if((_isItL&&_isEnC)||(_isEnL&&_isItC))continue;Ju.has(C)&&eu.push({source:l,target:C})}`,
     },
   ])
 }
