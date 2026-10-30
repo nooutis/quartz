@@ -2,7 +2,7 @@
 publish: true
 title: Il sistema elettorale perfetto
 created: 2026-08-12T12:50:58.852Z
-modified: 2026-10-07T19:16:43.093Z
+modified: 2026-10-30T11:12:46.629Z
 tags:
   - democracy
   - economy
@@ -20,8 +20,8 @@ Un'assunzione che possiamo fare quando parliamo di preferenze all'interno di uno
 
 Matematicamente, assumendo di avere un insieme di alternative $X$, totalmente ordinato e una funzione di preferenza $u$, possiamo definire una funzione di preferenza unimodale se esiste un punto $x^*$ che soddisfa queste due condizioni:
 
-1. Dati $x,y$ appartenenti a $X$, con $x < y \leq x^*$, vale che $u(x) < u(y)$
-2. Se invece vale $x^* \leq x \leq y$, allora vale che: $u(y) < u(x)$
+1. Dati $x,y$ appartenenti a $X$, con $x < y \leq x^*$, vale che $u(x) < u(y)$.
+2. Se invece vale $x^* \leq x \leq y$, allora vale che: $u(y) < u(x)$l
 
 ## Teorema dell'elettore mediano
 
@@ -51,7 +51,7 @@ Una caratteristica speciale dell'elettore mediano, è che, oltre a dare come ris
 
 Questo sistema ha una caratteristica fondamentale: poiché l'elettore a essere premiato è l'elettore mediano, il centro viene favorito rispetto agli estremi, dunque la convenienza del politico è quella di spostarsi verso il centro, ottenendo sia i voti dei moderati che quelli dei radicali. Nella realtà, però, avvengono due fenomeni che rendono la strategia di spostarsi verso il centro fallimentare, soprattutto se fatto a sinistra: l'inefficacia del modello di preferenza unimodale e l'allontanamento degli elettori dal paradigma della scelta razionale.
 
-1. Spesso gli elettori non hanno una preferenza unimodale, ma bimodale, ossia preferiscono gli estremi rispetto al centro, indipendentemente dall'ideologia degli estremisti. In particolare sembra che ci sia una fascia di elettori che preferisce un'azione concreta del governo rispetto alla percezione di un'inazione [^1]
+1. Spesso gli elettori non hanno una preferenza unimodale, ma bimodale, ossia preferiscono gli estremi rispetto al centro, indipendentemente dall'ideologia degli estremisti. In particolare sembra che ci sia una fascia di elettori che preferisce un'azione concreta del governo rispetto alla percezione di un'inazione [^1].
 2. Soprattutto a sinistra, gli elettori preferiscono non votare che votare per un partito che, sebbene sia il più vicino alle loro idee, si trova troppo poco a sinistra. [^2] Questo potrebbe derivare dal fatto che a sinistra il voto tende ad avere valore ideologico e non solo di utilità pratica.
 
 ### Conclusioni
