@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Democratic dilemma
-created: 2026-08-11T15:58:12.280Z
+created: 2026-09-17T16:02:08+02:00
 modified: 2026-09-28T13:19:56.001Z
 tags:
   - democracy

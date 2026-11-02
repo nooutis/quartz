@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Reform or Revolution?
-created: 2026-10-20T05:52:45.589Z
+created: 2026-10-23T08:25:04+02:00
 modified: 2026-10-23T06:21:20.324Z
 tags:
   - philosophy

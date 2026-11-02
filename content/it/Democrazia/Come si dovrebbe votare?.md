@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Come si dovrebbe votare?
-created: 2026-08-11T14:55:52.204Z
+created: 2026-09-24T17:00:05+02:00
 modified: 2026-09-23T12:18:37.668Z
 tags:
   - democracy

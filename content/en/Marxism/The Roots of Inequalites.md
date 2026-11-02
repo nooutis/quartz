@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Roots of Inequalities
-created: 2026-10-15T11:38:33.648Z
+created: 2026-10-15T15:01:24+02:00
 modified: 2026-10-16T10:25:12.712Z
 tags:
   - philosophy

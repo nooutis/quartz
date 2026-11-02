@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Riforma o rivoluzione?
-created: 2026-10-16T05:15:00.000Z
+created: 2026-10-22T16:12:21+02:00
 modified: 2026-10-23T06:18:32.659Z
 tags:
   - philosophy

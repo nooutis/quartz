@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Paradossi e criteri dei sistemi elettorali
-created: 2026-08-11T17:32:47.693Z
+created: 2026-10-01T15:59:43+02:00
 modified: 2026-08-19T17:11:45.982Z
 tags:
   - democracy

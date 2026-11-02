@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Le radici delle disuguaglianze
-created: 2026-06-07T15:58:49.904Z
+created: 2026-10-15T15:01:24+02:00
 modified: 2026-10-15T17:49:22.969Z
 tags:
   - philosophy

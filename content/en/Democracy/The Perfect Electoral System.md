@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Perfect Electoral System
-created: 2026-10-07T19:12:26.186Z
+created: 2026-10-07T21:17:36+02:00
 modified: 2026-10-07T19:16:49.499Z
 tags:
   - democracy

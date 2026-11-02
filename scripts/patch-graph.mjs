@@ -124,3 +124,33 @@ for (const file of searchFiles) {
     },
   ])
 }
+
+// 6. CreatedModifiedDate: automatically resolve first git commit date for created & published
+const dateFiles = [
+  path.join(process.cwd(), "node_modules/@quartz-community/created-modified-date/dist/index.js"),
+]
+for (const file of dateFiles) {
+  patchFile(file, [
+    {
+      search: `modified ||= await repo.getFileLatestModifiedDateAsync(relativePath);`,
+      replace: `modified ||= await repo.getFileLatestModifiedDateAsync(relativePath);
+                  try {
+                    const { execSync } = await import("child_process");
+                    const gitOut = execSync(\`git log --follow --format="%ct %s" -- "\${fullFp}"\`, { encoding: "utf8", stdio: ["pipe", "pipe", "ignore"] });
+                    const gitLines = gitOut.trim().split("\\n").filter(Boolean);
+                    if (gitLines.length > 0) {
+                      let firstTs = parseInt(gitLines[gitLines.length - 1].split(" ")[0], 10);
+                      if (fullFp.endsWith("index.md")) {
+                        const c2026 = gitLines.filter(l => parseInt(l.split(" ")[0], 10) >= 1767225600);
+                        if (c2026.length > 0) firstTs = parseInt(c2026[c2026.length - 1].split(" ")[0], 10);
+                      }
+                      if (!isNaN(firstTs)) {
+                        const firstDate = new Date(firstTs * 1000);
+                        created ||= firstDate;
+                        published ||= firstDate;
+                      }
+                    }
+                  } catch {}`,
+    },
+  ])
+}

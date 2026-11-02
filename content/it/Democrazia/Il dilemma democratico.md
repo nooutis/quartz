@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Il dilemma democratico
-created: 2026-05-20T15:57:50.875Z
+created: 2026-08-14T10:55:45+02:00
 modified: 2026-08-19T17:12:09.651Z
 tags:
   - democracy
