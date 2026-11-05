@@ -1,7 +1,7 @@
 ---
 publish: true
 title: The Industrial Society and Post-Scarcity
-created: 2026-10-29T15:13:03+01:00
+created: 2026-10-27T19:40:49.234Z
 modified: 2026-10-28T18:33:29.066Z
 tags:
   - philosophy

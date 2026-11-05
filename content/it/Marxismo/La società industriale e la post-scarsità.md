@@ -1,7 +1,7 @@
 ---
 publish: true
 title: La società industriale e la post-scarsità
-created: 2026-10-29T15:13:03+01:00
+created: 2026-06-20T16:55:05.000Z
 modified: 2026-10-28T18:33:52.212Z
 tags:
   - philosophy

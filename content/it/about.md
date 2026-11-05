@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Chi sono?
-created: 2026-08-04T17:40:30+02:00
+created: 2026-08-03T13:40:53.105Z
 modified: 2026-08-11T15:35:38.528Z
 ---
 

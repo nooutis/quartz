@@ -1,7 +1,7 @@
 ---
 publish: true
 title: About Charlotte
-created: 2026-08-04T17:40:30+02:00
+created: 2026-08-03T13:40:48.566Z
 modified: 2026-08-11T15:37:11.203Z
 ---
 

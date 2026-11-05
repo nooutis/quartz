@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Il mondo di Charlotte vi dà il benvenuto | Welcome to Charlotte’s World
-created: 2026-08-03T14:27:23+02:00
+created: 2026-08-03T15:06:25.514Z
 modified: 2026-08-11T15:37:29.569Z
 ---
 

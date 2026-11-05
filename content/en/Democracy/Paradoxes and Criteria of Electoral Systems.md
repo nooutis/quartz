@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Paradoxes and Criteria of Electoral Systems
-created: 2026-10-01T15:59:43+02:00
+created: 2026-08-19T16:59:47.231Z
 modified: 2026-10-30T11:12:16.391Z
 tags:
   - democracy

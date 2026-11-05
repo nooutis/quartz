@@ -1,8 +1,8 @@
 ---
 publish: true
 title: Le radici delle disuguaglianze
-created: 2026-10-15T15:01:24+02:00
-modified: 2026-10-15T17:49:22.969Z
+created: 2026-06-07T15:58:49.904Z
+modified: 2026-11-02T09:12:36.066Z
 tags:
   - philosophy
   - politics
@@ -40,7 +40,7 @@ Nel sistema capitalista contemporaneo, esistono due tipi fondamentali di gerarch
 
 Come visto precedentemente, le prime sono contingenti e indipendenti dal capitalismo stesso, e, pur essendo sistemiche, possono essere, almeno in parte, alleviate o ridotte. Il capitalismo, infatti, richiede strutturalmente una certa quantità di accumulazione di capitale, generando inevitabilmente disuguaglianze di tipo economico. Alcune disuguaglianze sociali, legate direttamente al potere economico, non possono essere ridotte, in quanto il denaro si traduce direttamente in potere sociale, e ne è la sua principale espressione, sebbene non l’unica; altre sono attualmente legate solo indirettamente, in modo più debole, al potere economico ed è quindi possibile ridurle attraverso la regolamentazione e l'educazione: pur essendo sotto lo stesso sistema economico, infatti, le disuguaglianze di genere e razziali sono diminuite negli ultimi decenni[^3][^4], nonostante il regresso di questi ultimi anni e la lontananza dalla parità sostanziale. Questo è possibile perché, nonostante il capitalismo abbia storicamente sfruttato le gerarchie socioeconomiche che lo hanno preceduto, lo sfruttamento economico è l'unica forma di oppressione prevista necessariamente: le altre forme di sfruttamento sono contingenti e legate a fattori indipendenti dal capitalismo stesso. Il capitalismo, naturalmente, non è nato e non si è sviluppato nel vuoto, ma la sua evoluzione può, attraverso varie correzioni, tendere ad un sistema socialdemocratico in cui le gerarchie, pur permanendo, sono di carattere puramente economico.
 
-#### Capitalismo e Patriarcato
+### Capitalismo e Patriarcato
 
 Il legame che esiste tra questi due sistemi è molto complesso: il capitalismo ha soppiantato la struttura sociale patriarcale che lo ha preceduto ed è esistita per millenni in regioni molto estese del pianeta ma ne ha assorbito gli aspetti ad esso funzionali. In particolare la divisione sessuale del lavoro ha permesso di rendere gratuito il lavoro domestico e di cura, essenziale per il mantenimento della società, senza gravare sui costi diretti di produzione. Bisogna però precisare che questa divisione non è sempre stata presente nel capitalismo: durante il periodo di industrializzazione, donne, uomini e bambini sono stati proletarizzati indistintamente: il modello del "breadwinner" è stato solo una fase di compromesso tra le lotte sindacali e la necessità di stabilizzare la riproduzione in un periodo non ancora tecnologicamente sviluppato (la mortalità era schizzata alle stelle), mentre ora, con l'automazione dei compiti domestici, il capitale sta tornando al suo modo di agire originario: trattare ogni essere umano indistintamente come pura unità di lavoro salariato.\
 Ciò dimostra che la subordinazione di genere è una configurazione storica contingente e che l'eliminazione dei residui patriarcali è pienamente compatibile con la produzione capitalista: ciò comporterebbe il passaggio a una linea di demarcazione puramente economica. [^10]

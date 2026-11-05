@@ -1,8 +1,8 @@
 ---
 publish: true
 title: The Roots of Inequalities
-created: 2026-10-15T15:01:24+02:00
-modified: 2026-10-16T10:25:12.712Z
+created: 2026-10-15T11:38:33.648Z
+modified: 2026-11-04T18:09:02.588Z
 tags:
   - philosophy
   - politics
@@ -49,7 +49,7 @@ This demonstrates that gender subordination is a contingent historical configura
 
 Whereas the relationship between capitalism and patriarchy is linked to contingent situations, the relationship with racism is even more clearly so. Although capitalism has historically benefited from colonialism (and continues to do so to some extent), the slave trade and the plundering of natural resources, its development shows that racism is not a vital principle of the system, but rather a hindrance to its full realization: the logic of capital is, by its very nature, indifferent to non-economic identity characteristics, since the law of value quantifies commodities and labour solely in terms of time and money. Restricting access to the labour force or excluding a section of the population on ethnic grounds constitutes an inefficiency and a contraction of the potential market. The wage differentials that still affect minorities or populations in the Global South today do not stem from ideological factors, but from objective disparities in local economic development and from unequal legal protection, which makes certain workers more vulnerable to blackmail and exploitation. Through globalization, capital assimilates any social group into the circuit of production and consumption, provided that the conditions for profit extraction are met. The elimination of racism is therefore compatible with capitalism, despite the fact that capitalism has historically exploited pre-existing socio-economic hierarchies whenever they afforded an economic advantage.
 
-#### The future of capitalism
+#### The future of Capitalism
 
 In countries that have transitioned from a planned economy to a market economy, there has been a sharp rise in inequality during the transition, due to the centralisation of economic power by the elites and the loss of purchasing power among the average citizen [^5][^6]: the only way to reduce economic inequality is to act directly on the economic system. Economic inequality is on the rise [^7] and this affects everyone: an individual’s reduced economic power translates into a reduced ability to influence society and difficulties in accessing quality goods and services, a risk that is amplified for marginalized social groups, as they are more vulnerable to poverty. Historical data indicate that capital tends to become concentrated, and the only way to reduce this phenomenon is to intervene directly to prevent the formation of monopolies and break up those that already exist. The solution – following the introduction of policies for the redistribution and democratisation of credit, while also implementing public control in sectors where this is necessary, so as to prevent new monopolies from forming in the future – lies in a complete rethinking of the way we conceive of production: capitalism naturally tends towards the formation of monopolies [^8]. Social-democratic reforms act as a buffer, allowing exploitation and economic hierarchies to be reduced before they are eliminated entirely
 

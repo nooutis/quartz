@@ -1,7 +1,7 @@
 ---
 publish: true
 title: How should we vote?
-created: 2026-09-24T17:00:05+02:00
+created: 2026-08-17T15:01:01.808Z
 modified: 2026-08-19T17:06:23.775Z
 tags:
   - democracy

@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Il sistema elettorale perfetto
-created: 2026-10-07T21:17:36+02:00
+created: 2026-08-12T12:50:58.852Z
 modified: 2026-10-30T11:12:46.629Z
 tags:
   - democracy
